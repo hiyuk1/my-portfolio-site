@@ -16,27 +16,27 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/motion-background.jpg";
+import image from "../images/alina-grubnyak-ZiQkhI7417A-unsplash.jpg";
 
-const imageAltText = "purple and blue abstract background";
+const imageAltText = "background image of several strings";
 
 /**
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I'm a Information Systems student studying at Universidade de São Paulo. I am curious to always learn more about technology and how impactful it can be";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "Data Science",
+  "Artificial Intelligence",
+  "Open Source",
+  "Web Development",
+  "Database",
+  "Data Visualization",
 ];
 
 /**
@@ -45,7 +45,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "I believe the difference can be made by how we use data and AI. By managing to extract the right insights from data, we can make the right decisions and create solutions that can impact people's lives positively.";
 
 const About = () => {
   return (
