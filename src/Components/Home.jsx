@@ -26,14 +26,15 @@ const imageAltText = "White robot holding a screen with a tag that says 'pepper'
 
 const Home = ({ name, title }) => {
   return (
-    <section id="home" className="min-height" style={{ position: "relative" }}>
-      <img className="background" src={image} alt="" />
+    <section id="home" className="min-height" style={{ position: "relative"}}>
+      <img className="background" src={image} alt="" style={{ userSelect: "none" }}/>
       <div
         style={{
           position: "absolute",
           top: 0,
           left: 0,
           width: "100%",
+          userSelect: "none",
           height: "100%",
           background: "rgba(255, 255, 255, 0.05)", // overlay branco semitransparente
           zIndex: 1,
@@ -44,7 +45,7 @@ const Home = ({ name, title }) => {
           style={{
             color: "#fff",
             margin: 0,
-            userSelect: "none", // impede seleção de texto
+            cursor: "default",
             textShadow: `
               0 0 6px #000,
               0 0 12px #000,
@@ -61,7 +62,7 @@ const Home = ({ name, title }) => {
           style={{
             color: "#fff",
             margin: 0,
-            userSelect: "none", // impede seleção de texto
+            cursor: "default",
             textShadow: `
               0 0 6px #000,
               0 0 12px #000,
@@ -76,7 +77,13 @@ const Home = ({ name, title }) => {
         </h2>
       </div>
       <div
-        style={{ position: "absolute", bottom: "3rem", left: "50%", zIndex: 2, cursor: "pointer" }}
+        style={{
+          position: "absolute",
+          bottom: "3rem",
+          left: "50%",
+          zIndex: 2,
+          cursor: "pointer", // pode deixar só esse!
+        }}
         onClick={() => {
           const aboutSection = document.getElementById("about");
           if (aboutSection) {

@@ -8,7 +8,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div
+    <nav
       style={{
         position: "fixed",
         display: "flex",
@@ -19,13 +19,15 @@ const Header = () => {
         top: 0,
         width: "100%",
         zIndex: 10,
+        userSelect: "none",
+        outline: "none", // remove contorno/caret
       }}
     >
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#footer">Contact</a>
-    </div>
+    </nav>
   );
 };
 

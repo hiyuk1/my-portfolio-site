@@ -47,14 +47,14 @@ section img.background {
 
 h1 {
   font-family: "Cormorant Garamond", serif;
-  font-size: 7rem;
+  font-size: clamp(2rem, 8vw, 5.5rem);
   font-weight: 400;
   line-height: 0.8;
   margin: 0;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: clamp(1rem, 4vw, 2rem);
   font-weight: 400;
   margin: 0;
   padding-top: 1rem;
@@ -102,6 +102,11 @@ a:hover {
   color: #4e567e;
 }
 
+nav a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .container {
   display: grid;
   grid-gap: 20px;
@@ -122,4 +127,82 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+.home-text-container {
+  max-width: 90vw;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  margin: 5rem 2rem 0 2rem;
+  width: 100%;
+  z-index: 2;
+  position: relative; /* ou remova se não precisar */
+}
+
+/* Celular (até 600px) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    grid-gap: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;
+  }
+  .container .box {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
+  section.padding {
+    padding: 1rem 0;
+  }
+  h1, h2 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  .container .box {
+    padding: 12px 8px;
+  }
+  img.socialIcon {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+/* TV (acima de 1600px) */
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Garante que imagens e ícones não ultrapassem o container */
+img,
+img.socialIcon {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Para evitar sobreposição geral */
+* {
+  box-sizing: border-box;
 }
