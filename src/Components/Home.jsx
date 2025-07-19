@@ -73,7 +73,15 @@ const Home = ({ name, title }) => {
           {title}
         </h2>
       </div>
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%", zIndex: 2 }}>
+      <div
+        style={{ position: "absolute", bottom: "3rem", left: "50%", zIndex: 2, cursor: "pointer" }}
+        onClick={() => {
+          const aboutSection = document.getElementById("about");
+          if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
+      >
         <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
       </div>
     </section>
