@@ -27571,7 +27571,8 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                 style: {
                     display: "flex",
                     justifyContent: "center",
-                    gap: "2.5rem"
+                    gap: "2.5rem",
+                    userSelect: "none"
                 },
                 children: [
                     email && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27582,12 +27583,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 65,
+                            lineNumber: 66,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 64,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, undefined),
                     devDotTo && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27600,12 +27601,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 70,
+                            lineNumber: 71,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 69,
+                        lineNumber: 70,
                         columnNumber: 11
                     }, undefined),
                     gitHub && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27618,12 +27619,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 75,
+                            lineNumber: 76,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 74,
+                        lineNumber: 75,
                         columnNumber: 11
                     }, undefined),
                     instagram && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27636,12 +27637,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 84,
+                            lineNumber: 85,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 79,
+                        lineNumber: 80,
                         columnNumber: 11
                     }, undefined),
                     linkedIn && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27654,12 +27655,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 93,
+                            lineNumber: 94,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 88,
+                        lineNumber: 89,
                         columnNumber: 11
                     }, undefined),
                     medium && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27672,12 +27673,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 98,
+                            lineNumber: 99,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 97,
+                        lineNumber: 98,
                         columnNumber: 11
                     }, undefined),
                     twitter && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27690,12 +27691,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 103,
+                            lineNumber: 104,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 102,
+                        lineNumber: 103,
                         columnNumber: 11
                     }, undefined),
                     youTube && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27708,12 +27709,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 112,
+                            lineNumber: 113,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 107,
+                        lineNumber: 108,
                         columnNumber: 11
                     }, undefined)
                 ]
@@ -27734,7 +27735,7 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 116,
+                lineNumber: 117,
                 columnNumber: 7
             }, undefined)
         ]
@@ -28552,7 +28553,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 const Header = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
         style: {
             position: "fixed",
             display: "flex",
@@ -28562,7 +28563,9 @@ const Header = ()=>{
             padding: "1rem",
             top: 0,
             width: "100%",
-            zIndex: 10
+            zIndex: 10,
+            userSelect: "none",
+            outline: "none"
         },
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28570,7 +28573,7 @@ const Header = ()=>{
                 children: "Home"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 24,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28578,7 +28581,7 @@ const Header = ()=>{
                 children: "About"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 25,
+                lineNumber: 27,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28586,7 +28589,7 @@ const Header = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 26,
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28594,7 +28597,7 @@ const Header = ()=>{
                 children: "Contact"
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
-                lineNumber: 27,
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined)
         ]
@@ -28659,7 +28662,10 @@ const Home = ({ name , title  })=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "background",
                 src: (0, _alexKnight2EJCSULRwC8UnsplashJpgDefault.default),
-                alt: ""
+                alt: "",
+                style: {
+                    userSelect: "none"
+                }
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
                 lineNumber: 30,
@@ -28671,6 +28677,7 @@ const Home = ({ name , title  })=>{
                     top: 0,
                     left: 0,
                     width: "100%",
+                    userSelect: "none",
                     height: "100%",
                     background: "rgba(255, 255, 255, 0.05)",
                     zIndex: 1
@@ -28693,6 +28700,7 @@ const Home = ({ name , title  })=>{
                         style: {
                             color: "#fff",
                             margin: 0,
+                            cursor: "default",
                             textShadow: `
               0 0 6px #000,
               0 0 12px #000,
@@ -28705,13 +28713,14 @@ const Home = ({ name , title  })=>{
                         children: name
                     }, void 0, false, {
                         fileName: "src/Components/Home.jsx",
-                        lineNumber: 43,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                         style: {
                             color: "#fff",
                             margin: 0,
+                            cursor: "default",
                             textShadow: `
               0 0 6px #000,
               0 0 12px #000,
@@ -28724,13 +28733,13 @@ const Home = ({ name , title  })=>{
                         children: title
                     }, void 0, false, {
                         fileName: "src/Components/Home.jsx",
-                        lineNumber: 59,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 42,
+                lineNumber: 43,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28756,12 +28765,12 @@ const Home = ({ name , title  })=>{
                     alt: imageAltText
                 }, void 0, false, {
                     fileName: "src/Components/Home.jsx",
-                    lineNumber: 85,
+                    lineNumber: 94,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 76,
+                lineNumber: 79,
                 columnNumber: 7
             }, undefined)
         ]
@@ -28842,6 +28851,7 @@ const Portfolio = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "padding",
         id: "portfolio",
+        tabIndex: -1,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 style: {
@@ -28850,7 +28860,7 @@ const Portfolio = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 44,
+                lineNumber: 48,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28875,12 +28885,12 @@ const Portfolio = ()=>{
                             alt: imageAltText
                         }, void 0, false, {
                             fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 47,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 46,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28899,12 +28909,12 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 57,
+                                            lineNumber: 71,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 56,
+                                        lineNumber: 66,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28912,24 +28922,24 @@ const Portfolio = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 59,
+                                        lineNumber: 73,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 55,
+                                lineNumber: 65,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 53,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 45,
+                lineNumber: 49,
                 columnNumber: 7
             }, undefined)
         ]

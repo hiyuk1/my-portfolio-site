@@ -42,7 +42,7 @@ section img.background {
 h1 {
   margin: 0;
   font-family: Cormorant Garamond, serif;
-  font-size: 7rem;
+  font-size: clamp(2rem, 8vw, 5.5rem);
   font-weight: 400;
   line-height: .8;
 }
@@ -50,7 +50,7 @@ h1 {
 h2 {
   margin: 0;
   padding-top: 1rem;
-  font-size: 2rem;
+  font-size: clamp(1rem, 4vw, 2rem);
   font-weight: 400;
 }
 
@@ -96,6 +96,11 @@ a:hover {
   color: #4e567e;
 }
 
+nav a:focus {
+  box-shadow: none;
+  outline: none;
+}
+
 .container {
   grid-gap: 20px;
   grid-template-columns: 330px 300px;
@@ -116,6 +121,87 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+.home-text-container {
+  max-width: 90vw;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  width: 100%;
+  z-index: 2;
+  margin: 5rem 2rem 0;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  h2 {
+    text-align: left;
+    padding-top: .5rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .container {
+    grid-gap: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+  }
+
+  .container .box {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
+
+  section.padding {
+    padding: 1rem 0;
+  }
+
+  h1, h2 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .container .box {
+    padding: 12px 8px;
+  }
+
+  img.socialIcon {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+img, img.socialIcon {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=index.4d663569.css.map */
