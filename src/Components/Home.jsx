@@ -44,6 +44,7 @@ const Home = ({ name, title }) => {
           style={{
             color: "#fff",
             margin: 0,
+            userSelect: "none", // impede seleção de texto
             textShadow: `
               0 0 6px #000,
               0 0 12px #000,
@@ -60,6 +61,7 @@ const Home = ({ name, title }) => {
           style={{
             color: "#fff",
             margin: 0,
+            userSelect: "none", // impede seleção de texto
             textShadow: `
               0 0 6px #000,
               0 0 12px #000,
