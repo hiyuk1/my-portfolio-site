@@ -36,6 +36,18 @@ const projectList = [
       "An end-to-end project simulating a real-world data workflow. It covers everything from setting up a relational database in MySQL, through data cleaning and Exploratory Data Analysis (EDA) with Python/Pandas, to creating an interactive dashboard in Power BI and developing a predictive model.",
     url: "https://github.com/hiyuk1/pipeline-dados-ecommerce",
   },
+   {
+    title: "Full-Stack Social Media Platform (Sentimetrik)",
+    description:
+      "(Incoming) An end-to-end project simulating a real-world data workflow. It covers everything from setting up a relational database in MySQL, through data cleaning and Exploratory Data Analysis (EDA) with Python/Pandas, to creating an interactive dashboard in Power BI and developing a predictive model.",
+    url: "",
+  },
+  {
+    "title": "Spotify Data Pipeline & Playlist Analysis",
+    "description":
+      "An automated data pipeline that extracts song data and audio features (e.g., danceability, energy) from the Spotify API using Python. The project covers data ingestion, storage, transformation, and exploratory analysis to uncover musical patterns and demonstrate skills in API integration.",
+    "url": "",
+  }
 ];
 
 const Portfolio = () => {
