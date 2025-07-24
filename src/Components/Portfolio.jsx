@@ -37,15 +37,15 @@ const projectList = [
     url: "https://github.com/hiyuk1/pipeline-dados-ecommerce",
   },
    {
-    title: "Full-Stack Social Media Platform (Sentimetrik)",
+    title: "Full-Stack Social Media Platform (Sentimetrik) (Incoming)",
     description:
-      "(Incoming) An end-to-end project simulating a real-world data workflow. It covers everything from setting up a relational database in MySQL, through data cleaning and Exploratory Data Analysis (EDA) with Python/Pandas, to creating an interactive dashboard in Power BI and developing a predictive model.",
+      "A comprehensive social media platform featuring user authentication, real-time messaging, post creation and interaction, sentiment analysis of posts, and data visualization dashboards. Built with modern web technologies and microservices architecture.",
     url: "",
   },
   {
-    "title": "Spotify Data Pipeline & Playlist Analysis",
+    "title": "Spotify Data Pipeline & Playlist Analysis (Incoming)",
     "description":
-      "(Incoming) An automated data pipeline that extracts song data and audio features (e.g., danceability, energy) from the Spotify API using Python. The project covers data ingestion, storage, transformation, and exploratory analysis to uncover musical patterns and demonstrate skills in API integration.",
+      "An automated data pipeline that extracts song data and audio features (e.g., danceability, energy) from the Spotify API using Python. The project covers data ingestion, storage, transformation, and exploratory analysis to uncover musical patterns and demonstrate skills in API integration.",
     "url": "",
   }
 ];
@@ -75,13 +75,19 @@ const Portfolio = () => {
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
+              {project.url ? (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+                </a>
+              ) : (
+                <h3 style={{ flexBasis: "40px", color: "#888", cursor: "default" }}>
+                  {project.title}
+                </h3>
+              )}
               <p className="small">{project.description}</p>
             </div>
           ))}
