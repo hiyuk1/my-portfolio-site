@@ -148,6 +148,29 @@ img.socialIcon {
     font-size: 1.2rem;
   }
 
+  #home h1 {
+    text-align: left !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 2.5rem !important;
+    line-height: 1.1 !important;
+  }
+
+  #home h2 {
+    text-align: left !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1.2rem !important;
+    line-height: 1.2 !important;
+  }
+
+  #home div[style*="top: 5rem"] {
+    width: calc(100% - 2rem) !important;
+    max-width: calc(100% - 2rem) !important;
+    top: 2rem !important;
+    left: 1rem !important;
+  }
+
   .container {
     grid-gap: 0;
     width: 100%;
