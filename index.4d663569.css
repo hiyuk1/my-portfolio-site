@@ -215,6 +215,26 @@ img.socialIcon {
     width: 28px !important;
   }
 
+  div[style*="backgroundColor: white"][style*="width: 50%"] {
+    width: 90% !important;
+    max-width: 90% !important;
+    margin: 1rem auto !important;
+    padding: 2rem 1rem !important;
+  }
+
+  .skills-list {
+    columns: 1 !important;
+    gap: 0 !important;
+    margin: 1rem 0 !important;
+    padding: 0 1rem !important;
+  }
+
+  .skills-list li {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    margin-bottom: .5rem !important;
+  }
+
   div[style*="display: flex"][style*="flexDirection: row"] {
     flex-direction: column !important;
     align-items: center !important;
