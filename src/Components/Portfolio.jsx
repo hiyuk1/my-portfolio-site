@@ -45,7 +45,7 @@ const projectList = [
   {
     "title": "Spotify Data Pipeline & Playlist Analysis",
     "description":
-      "An automated data pipeline that extracts song data and audio features (e.g., danceability, energy) from the Spotify API using Python. The project covers data ingestion, storage, transformation, and exploratory analysis to uncover musical patterns and demonstrate skills in API integration.",
+      "(Incoming) An automated data pipeline that extracts song data and audio features (e.g., danceability, energy) from the Spotify API using Python. The project covers data ingestion, storage, transformation, and exploratory analysis to uncover musical patterns and demonstrate skills in API integration.",
     "url": "",
   }
 ];
