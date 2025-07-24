@@ -108,6 +108,14 @@ nav a:focus {
   display: grid;
 }
 
+@media (max-width: 768px) {
+  .container {
+    grid-gap: 0 !important;
+    grid-template-columns: none !important;
+    display: flex !important;
+  }
+}
+
 .container .box {
   text-align: center;
   border: 1px solid #ccc;
@@ -163,13 +171,14 @@ img.socialIcon {
   }
 
   .container {
-    width: 100% !important;
-    max-width: 100% !important;
+    width: calc(100% - 2rem) !important;
+    max-width: calc(100% - 2rem) !important;
     box-sizing: border-box !important;
     flex-direction: column !important;
-    align-items: center !important;
+    align-items: stretch !important;
+    gap: 1rem !important;
     margin: 0 auto !important;
-    padding: 0 1rem !important;
+    padding: 1rem !important;
     display: flex !important;
   }
 
@@ -178,8 +187,10 @@ img.socialIcon {
     max-width: 100% !important;
     min-width: 0 !important;
     box-sizing: border-box !important;
-    margin-bottom: 1rem !important;
-    padding: 16px !important;
+    word-wrap: break-word !important;
+    flex: none !important;
+    margin: 0 !important;
+    padding: 1rem !important;
     overflow: hidden !important;
   }
 
