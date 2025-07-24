@@ -27195,7 +27195,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
  * About background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  * Need an image? Check out https://unsplash.com to download a image you
@@ -28744,18 +28744,32 @@ const Home = ({ name , title  })=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                role: "button",
+                tabIndex: 0,
+                "aria-label": "Scroll to about section",
                 style: {
                     position: "absolute",
                     bottom: "3rem",
                     left: "50%",
                     zIndex: 2,
-                    cursor: "pointer"
+                    cursor: "pointer",
+                    background: "none",
+                    border: "none",
+                    outline: "none"
                 },
                 onClick: ()=>{
                     const aboutSection = document.getElementById("about");
                     if (aboutSection) aboutSection.scrollIntoView({
                         behavior: "smooth"
                     });
+                },
+                onKeyDown: (e)=>{
+                    if (e.key === "Enter" || e.key === " ") {
+                        const aboutSection = document.getElementById("about");
+                        if (aboutSection) aboutSection.scrollIntoView({
+                            behavior: "smooth"
+                        });
+                    }
                 },
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: (0, _downArrowSvgDefault.default),
@@ -28766,7 +28780,7 @@ const Home = ({ name , title  })=>{
                     alt: imageAltText
                 }, void 0, false, {
                     fileName: "src/Components/Home.jsx",
-                    lineNumber: 94,
+                    lineNumber: 108,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
@@ -28853,10 +28867,10 @@ const imageAltText = "wooden desktop with laptop showing ChatGPT";
         url: ""
     },
     {
-        "title": "Spotify Data Pipeline & Playlist Analysis (Incoming)",
-        "description": "An automated data pipeline that extracts song data and audio features (e.g., danceability, energy) from the Spotify API using Python. The project covers data ingestion, storage, transformation, and exploratory analysis to uncover musical patterns and demonstrate skills in API integration.",
-        "url": ""
-    }
+        title: "Spotify Data Pipeline & Playlist Analysis (Incoming)",
+        description: "Comprehensive analysis of Spotify listening patterns and intelligent playlist generation using data pipelines and machine learning algorithms.",
+        url: ""
+    }, 
 ];
 const Portfolio = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28871,7 +28885,7 @@ const Portfolio = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 60,
+                lineNumber: 56,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28896,12 +28910,12 @@ const Portfolio = ()=>{
                             alt: imageAltText
                         }, void 0, false, {
                             fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 69,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 68,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28920,12 +28934,12 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 84,
+                                            lineNumber: 76,
                                             columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 79,
+                                        lineNumber: 75,
                                         columnNumber: 17
                                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                                         style: {
@@ -28936,7 +28950,7 @@ const Portfolio = ()=>{
                                         children: project.title
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 87,
+                                        lineNumber: 79,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28944,24 +28958,24 @@ const Portfolio = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 91,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 77,
+                                lineNumber: 73,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 75,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 61,
+                lineNumber: 57,
                 columnNumber: 7
             }, undefined)
         ]
