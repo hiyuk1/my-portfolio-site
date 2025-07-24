@@ -36,28 +36,24 @@ const projectList = [
       "An end-to-end project simulating a real-world data workflow. It covers everything from setting up a relational database in MySQL, through data cleaning and Exploratory Data Analysis (EDA) with Python/Pandas, to creating an interactive dashboard in Power BI and developing a predictive model.",
     url: "https://github.com/hiyuk1/pipeline-dados-ecommerce",
   },
-   {
+  {
     title: "Full-Stack Social Media Platform (Sentimetrik) (Incoming)",
     description:
       "A comprehensive social media platform featuring user authentication, real-time messaging, post creation and interaction, sentiment analysis of posts, and data visualization dashboards. Built with modern web technologies and microservices architecture.",
     url: "",
   },
   {
-    "title": "Spotify Data Pipeline & Playlist Analysis (Incoming)",
-    "description":
-      "An automated data pipeline that extracts song data and audio features (e.g., danceability, energy) from the Spotify API using Python. The project covers data ingestion, storage, transformation, and exploratory analysis to uncover musical patterns and demonstrate skills in API integration.",
-    "url": "",
-  }
+    title: "Spotify Data Pipeline & Playlist Analysis (Incoming)",
+    description:
+      "Comprehensive analysis of Spotify listening patterns and intelligent playlist generation using data pipelines and machine learning algorithms.",
+    url: "",
+  },
 ];
 
 const Portfolio = () => {
   return (
-    <section
-      className="padding"
-      id="portfolio"
-      tabIndex={-1}
-    >
-      <h2 style={{ textAlign: "center"}}>Portfolio</h2>
+    <section className="padding" id="portfolio" tabIndex={-1}>
+      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div
         style={{
           display: "flex",
@@ -76,11 +72,7 @@ const Portfolio = () => {
           {projectList.map((project) => (
             <div className="box" key={project.title}>
               {project.url ? (
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
                   <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
                 </a>
               ) : (

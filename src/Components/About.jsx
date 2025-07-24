@@ -10,7 +10,7 @@ import React from "react";
  * About background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  * Need an image? Check out https://unsplash.com to download a image you
@@ -49,8 +49,8 @@ const detailOrQuote =
 
 const About = () => {
   return (
-    <section className="padding" id="about" >
-      <img className="background" src={image} alt={imageAltText}/>
+    <section className="padding" id="about">
+      <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
           backgroundColor: "white",
@@ -71,6 +71,7 @@ const About = () => {
             margin: "2rem 3rem",
             gap: "3rem",
           }}
+          className="skills-list"
         >
           {skillsList.map((skill) => (
             <li key={skill}>{skill}</li>

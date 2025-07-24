@@ -153,6 +153,32 @@ img.socialIcon {
     text-align: left;
     padding-left: 1rem;
   }
+  
+  /* HOME específica - arruma nome bugado */
+  #home h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+  
+  #home h2 {
+    font-size: 1.2rem !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+  
+  /* Container do texto da home */
+  #home div[style*="top: 5rem"] {
+    top: 2rem !important;
+    left: 1rem !important;
+    width: calc(100% - 2rem) !important;
+    max-width: calc(100% - 2rem) !important;
+  }
+  
   .container {
     display: flex;
     flex-direction: column;

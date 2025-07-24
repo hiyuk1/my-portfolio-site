@@ -26,8 +26,8 @@ const imageAltText = "White robot holding a screen with a tag that says 'pepper'
 
 const Home = ({ name, title }) => {
   return (
-    <section id="home" className="min-height" style={{ position: "relative"}}>
-      <img className="background" src={image} alt="" style={{ userSelect: "none" }}/>
+    <section id="home" className="min-height" style={{ position: "relative" }}>
+      <img className="background" src={image} alt="" style={{ userSelect: "none" }} />
       <div
         style={{
           position: "absolute",
@@ -77,17 +77,31 @@ const Home = ({ name, title }) => {
         </h2>
       </div>
       <div
+        role="button"
+        tabIndex={0}
+        aria-label="Scroll to about section"
         style={{
           position: "absolute",
           bottom: "3rem",
           left: "50%",
           zIndex: 2,
           cursor: "pointer", // pode deixar só esse!
+          background: "none",
+          border: "none",
+          outline: "none",
         }}
         onClick={() => {
           const aboutSection = document.getElementById("about");
           if (aboutSection) {
             aboutSection.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            const aboutSection = document.getElementById("about");
+            if (aboutSection) {
+              aboutSection.scrollIntoView({ behavior: "smooth" });
+            }
           }
         }}
       >
