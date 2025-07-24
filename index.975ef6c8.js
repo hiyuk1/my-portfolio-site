@@ -28845,7 +28845,17 @@ const imageAltText = "wooden desktop with laptop showing ChatGPT";
         title: "End-to-end E-commerce Data Pipeline",
         description: "An end-to-end project simulating a real-world data workflow. It covers everything from setting up a relational database in MySQL, through data cleaning and Exploratory Data Analysis (EDA) with Python/Pandas, to creating an interactive dashboard in Power BI and developing a predictive model.",
         url: "https://github.com/hiyuk1/pipeline-dados-ecommerce"
-    }, 
+    },
+    {
+        title: "Full-Stack Social Media Platform (Sentimetrik) (Incoming)",
+        description: "A comprehensive social media platform featuring user authentication, real-time messaging, post creation and interaction, sentiment analysis of posts, and data visualization dashboards. Built with modern web technologies and microservices architecture.",
+        url: ""
+    },
+    {
+        "title": "Spotify Data Pipeline & Playlist Analysis (Incoming)",
+        "description": "An automated data pipeline that extracts song data and audio features (e.g., danceability, energy) from the Spotify API using Python. The project covers data ingestion, storage, transformation, and exploratory analysis to uncover musical patterns and demonstrate skills in API integration.",
+        "url": ""
+    }
 ];
 const Portfolio = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
@@ -28860,7 +28870,7 @@ const Portfolio = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 48,
+                lineNumber: 60,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28885,12 +28895,12 @@ const Portfolio = ()=>{
                             alt: imageAltText
                         }, void 0, false, {
                             fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 57,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 56,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28898,7 +28908,7 @@ const Portfolio = ()=>{
                         children: projectList.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "box",
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    project.url ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                         href: project.url,
                                         target: "_blank",
                                         rel: "noopener noreferrer",
@@ -28909,43 +28919,54 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 71,
-                                            columnNumber: 17
+                                            lineNumber: 84,
+                                            columnNumber: 19
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 66,
-                                        columnNumber: 15
+                                        lineNumber: 79,
+                                        columnNumber: 17
+                                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        style: {
+                                            flexBasis: "40px",
+                                            color: "#888",
+                                            cursor: "default"
+                                        },
+                                        children: project.title
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Portfolio.jsx",
+                                        lineNumber: 87,
+                                        columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                         className: "small",
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 73,
+                                        lineNumber: 91,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 65,
+                                lineNumber: 77,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 63,
+                        lineNumber: 75,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 49,
+                lineNumber: 61,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 43,
+        lineNumber: 55,
         columnNumber: 5
     }, undefined);
 };
