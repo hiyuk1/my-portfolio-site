@@ -294,6 +294,35 @@ img.socialIcon {
     overflow: hidden !important;
   }
 
+  #home h1[style*="textShadow"] {
+    text-shadow: 1px 1px 2px #000 !important;
+    max-width: calc(100vw - 2rem) !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    font-size: 1.2rem !important;
+    overflow: hidden !important;
+  }
+
+  #home h2[style*="textShadow"] {
+    text-shadow: 1px 1px 2px #000 !important;
+    max-width: calc(100vw - 2rem) !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    font-size: .9rem !important;
+    overflow: hidden !important;
+  }
+
+  #home div[style*="width: 17rem"] {
+    width: calc(100vw - 2rem) !important;
+    max-width: calc(100vw - 2rem) !important;
+    top: 2rem !important;
+    left: 1rem !important;
+  }
+
+  #home div[style*="bottom: 3rem"] {
+    display: none !important;
+  }
+
   .container {
     width: calc(100% - .5rem) !important;
     max-width: 100% !important;
